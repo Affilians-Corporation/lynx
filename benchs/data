@@ -1,0 +1,26 @@
+Simple Signature without throwing out the Archetype:
+	1 entity with 2 components: 2093
+	4 entities with 2 components: 1816	
+	8 entities with 2 components: 1900
+	16 entities with 2 components: 2064
+	32 entities with 2 components: 2487
+	64 entities with 2 components: 5030
+	128 entities with 2 components: 5593
+	256 entities with 2 components: 8805
+	512 entities with 2 components: 12684
+	1024 entities with 2 components: 24494
+	2048 entities with 2 components: OOM
+Simple Signature, recreating Archetype every iteration:
+	1 entity with 2 components: 1774
+	4 entities with 2 components: 1895
+	8 entities with 2 components: 2101
+	16 entities with 2 components: 3268
+	32 entities with 2 components: 4703
+	64 entities with 2 components: 4736
+	128 entities with 2 components: 5311
+	256 entities with 2 components: 9952
+	512 entities with 2 components: 10269
+	1024 entities with 2 components: 16518
+	2048 entities with 2 components: 24037
+	4096 entities with 2 components: 42650
+	

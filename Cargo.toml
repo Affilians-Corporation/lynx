@@ -1,0 +1,25 @@
+[package]
+name = "lynx"
+version = "0.1.0"
+edition = "2024"
+
+[profile.release]
+opt-level = 3               # Highest level of optimization (speed)
+lto = "fat"                 # Link Time Optimization (fat is best)
+codegen-units = 1           # Force single codegen unit (better inlining)
+debug = false               # No debug symbols
+panic = "abort"             # Smaller binary and less overhead
+strip = "symbols"           # Removes symbols from binary (optional)
+overflow-checks = false     # Disables runtime integer overflow checks
+debug-assertions = false
+
+[dependencies]
+backtrace = "0.3.75"
+bincode = "2.0.1"
+bumpalo = "3.18.1"
+dhat = "0.3.3"
+lynx-derive = { version = "0.1.0", path = "lynx-derive" }
+lynx-traits = { version = "0.1.0", path = "lynx-traits" }
+smallvec = "1.15.1"
+tabled = "0.20.0"
+unchecked-std = "1.0.1"

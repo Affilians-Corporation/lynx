@@ -1,0 +1,16 @@
+[package]
+name = "lynx-derive"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "lynx_derive"
+path = "src/lib.rs"
+proc-macro = true
+
+[dependencies]
+lynx-traits = { version = "0.1.0", path = "../lynx-traits" }
+proc-macro2 = "1.0.95"
+quote = "1.0.40"
+syn = "2.0.102"
+tabled = "0.20.0"
